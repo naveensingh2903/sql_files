@@ -27,4 +27,7 @@ select * from sys.dm_exec_requests
 where status='running'
 
 --Added second line to user_and _role_permissions
-select * from sys.sysprocesses where id  between 40 and 50 
+select * from sys.sysprocesses where id  between 40 and 50
+
+--Added fourth line to user_and_role_permissions
+select count(*) from sys.dm_exec_connections
