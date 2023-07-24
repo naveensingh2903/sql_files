@@ -49,3 +49,9 @@ select session_id from sys.dm_exec_requests
 
 --Added tenth line to user_and_role_permissions
 select request_id from sys.dm_exec_requests 
+
+--Added eleventh line to user_and_role_permissions
+select start_time from sys.dm_exec_requests 
+
+--Added twelfth line to user_and_role_permissions
+select end_time from sys.dm_exec_requests 
