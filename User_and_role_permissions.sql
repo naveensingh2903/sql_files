@@ -40,7 +40,12 @@ select status,count(*) from sys.dm_exec_requests group by status
 
 --Added seventh line to user_and_role_permissions
 select status,count(*) from sys.dm_exec_sessions group by status 
-select status,count(*) from sys.dm_exec_sessions group by status 
 
 --Added eighth line to user_and_role_permissions
 select session_id,request_id from sys.dm_exec_requests 
+
+--Added ninth line to user_and_role_permissions
+select session_id from sys.dm_exec_requests 
+
+--Added tenth line to user_and_role_permissions
+select request_id from sys.dm_exec_requests 
