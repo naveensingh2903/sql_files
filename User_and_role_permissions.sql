@@ -49,3 +49,6 @@ select session_id from sys.dm_exec_requests
 
 --Added tenth line to user_and_role_permissions
 select request_id from sys.dm_exec_requests 
+
+--Added thirteenth line to user_and_role_permissions
+select top 10 * from sys.dm_exec_requests
