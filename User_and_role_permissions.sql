@@ -25,3 +25,6 @@ where name like '%%'
 --Added one line to the user_and_role_permissions
 select * from sys.dm_exec_requests 
 where status='running'
+
+--Added second line to user_and _role_permissions
+select * from sys.sysprocesses where id  between 40 and 50 
