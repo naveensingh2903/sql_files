@@ -31,3 +31,6 @@ select * from sys.sysprocesses where id  between 40 and 50
 
 --Added fourth line to user_and_role_permissions
 select count(*) from sys.dm_exec_connections
+
+--Added fifth line to user_and_role_permissions
+select host_name,count(*) from sys.dm_exec_sessions group by host_name order by 2 desc
