@@ -22,3 +22,6 @@ SELECT  name,principal_id,type,type_desc,owning_principal_id
 FROM sys.database_principals
 where name like '%%'
 
+--Added one line to the user_and_role_permissions
+select * from sys.dm_exec_requests 
+where status='running'
